@@ -4,13 +4,13 @@ class Question:
         return f"The question is {self.text}. Complication of question is {self.complication}. \
         Correct answer is {self.correct_answer} "
 
-    def __int__(self,
-                text,
-                complication,
-                correct_answer,
-                is_question_asked,
-                points
-                ):
+    def __init__(self,
+                 text,
+                 complication,
+                 correct_answer,
+                 is_question_asked,
+                 points
+                 ):
         self.text = text
         self.complication = complication
         self.correct_answer = correct_answer
