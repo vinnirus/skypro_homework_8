@@ -1,7 +1,8 @@
 class Question:
 
     def __repr__(self):
-        return f"The question is {self.text}. Complication of question is {self.complication}"
+        return f"The question is {self.text}. Complication of question is {self.complication}. \
+        Correct answer is {self.correct_answer} "
 
     def __int__(self,
                 text,
