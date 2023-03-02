@@ -21,7 +21,8 @@ def print_game_statistic(game_question_list: list[Question]) -> None:
 
 if __name__ == "__main__":
     # taking questions from json on http-server
-    response = requests.get('https://jsonkeeper.com/b/TXK5', verify=False)
+    QUESTIONS_PAGE_URL = 'https://jsonkeeper.com/b/TXK5'
+    response = requests.get(QUESTIONS_PAGE_URL, verify=False)
     questions_from_json = json.loads(response.content)
 
     questions = []
