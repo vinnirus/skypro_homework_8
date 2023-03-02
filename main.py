@@ -34,7 +34,7 @@ if __name__ == "__main__":
     for question in questions:
         question.build_question()
         question.is_question_asked = True
-        question.user_answer = input('Your answer:')
+        question.user_answer = input('Ваш ответ:')
 
         if question.is_correct():
             question.build_positive_feedback()
